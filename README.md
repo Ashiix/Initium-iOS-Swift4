@@ -3,5 +3,6 @@ Open source Initium iOS Xcode project
 
 Feel free to download or make changes
 
+Click here for a pre-compiled IPA:
 
-Please don't attempt to upload to App Store, it will be denied
+Please don't attempt to publish to App Store, you do not have the rights and if will be denied anyway.
