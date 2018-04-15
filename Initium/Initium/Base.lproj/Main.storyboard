@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Initium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" customUserAgent="" translatesAutoresizingMaskIntoConstraints="NO" id="yUx-T3-TbL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <dataDetectorTypes key="dataDetectorTypes" none="YES"/>
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InitiumFirstLoad.png" translatesAutoresizingMaskIntoConstraints="NO" id="zwY-LP-OWD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hh-yd-o2M">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <action selector="buttontohide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E04-gj-aOb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9hh-yd-o2M" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3US-ic-s8L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9hh-yd-o2M" secondAttribute="bottom" id="6k7-Fj-2x4"/>
+                            <constraint firstItem="zwY-LP-OWD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Axh-Y9-4v7"/>
+                            <constraint firstItem="yUx-T3-TbL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="aBB-lH-Ciy"/>
+                            <constraint firstItem="yUx-T3-TbL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b6h-Y9-HCo"/>
+                            <constraint firstItem="zwY-LP-OWD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="c6K-AX-2FZ"/>
+                            <constraint firstItem="yUx-T3-TbL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ckE-Vf-L3G"/>
+                            <constraint firstItem="zwY-LP-OWD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eyQ-zY-JmK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9hh-yd-o2M" secondAttribute="trailing" id="kAw-bX-9Yr"/>
+                            <constraint firstItem="zwY-LP-OWD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uSd-bn-5db"/>
+                            <constraint firstItem="9hh-yd-o2M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yqc-jo-0kg"/>
+                            <constraint firstItem="yUx-T3-TbL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zzf-81-gtd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonhide" destination="9hh-yd-o2M" id="vJO-Zj-ttV"/>
+                        <outlet property="firstloadpng" destination="zwY-LP-OWD" id="5SP-to-k1N"/>
+                        <outlet property="webview" destination="yUx-T3-TbL" id="t6O-Tx-GGF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.19999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="InitiumFirstLoad.png" width="1080" height="1920"/>
+    </resources>
+</document>
