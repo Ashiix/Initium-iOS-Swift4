@@ -14,10 +14,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var webview: WKWebView!
     @IBOutlet weak var firstloadpng: UIImageView!
     @IBOutlet weak var buttonhide: UIButton!
+    @IBOutlet weak var webview2: WKWebView!
+    @IBOutlet weak var switchacc: UIButton!
+    @IBOutlet weak var switchacc2: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         
         if(!UserDefaults.standard.bool (forKey: "onfirstlaunch"))
         
@@ -36,9 +40,13 @@ class ViewController: UIViewController {
         
         //load google view
         
-        let initiumgoogurl = URL(string: "https://www.google.com/accounts/ServiceLogin?service=ah&passive=true&continue=https://appengine.google.com/_ah/conflogin%3Fcontinue%3Dhttps://www.playinitium.com/ServletUserControl%253Ftype%253Doauth%2526authType%253Dgoogle")
+        let initiumgoogurl = URL(string: "https://www.playinitium.com/")
         let initiumreq = URLRequest(url: initiumgoogurl!)
         webview.load(initiumreq)
+        
+        let initiumgoogurl2 = URL(string: "https://www.playinitium.com/")
+        let initiumreq2 = URLRequest(url: initiumgoogurl2!)
+        webview2.load(initiumreq2)
         
         
     }
@@ -50,6 +58,24 @@ class ViewController: UIViewController {
         return true
     }
 
+    @IBAction func switchacc(_ sender: Any) {
+
+        webview.isHidden = true
+        webview2.isHidden = false
+        switchacc.isHidden = true
+        switchacc2.isHidden = false
+        
+    }
+    
+    @IBAction func switchacc2(_ sender: Any) {
+        
+        webview2.isHidden = true
+        webview.isHidden = false
+        switchacc2.isHidden = true
+        switchacc.isHidden = false
+    
+    }
+    
     
     @IBAction func buttontohide(_ sender: Any)
     {

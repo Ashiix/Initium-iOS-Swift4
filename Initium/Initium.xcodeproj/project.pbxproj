@@ -16,7 +16,7 @@
 		7979C71E203928CB0000BA16 /* InitiumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7979C71D203928CB0000BA16 /* InitiumTests.swift */; };
 		7979C729203928CB0000BA16 /* InitiumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7979C728203928CB0000BA16 /* InitiumUITests.swift */; };
 		7983D8D72039CCC100A3E5F9 /* InitiumBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 7983D8D62039CCC100A3E5F9 /* InitiumBanner.png */; };
-		79DDC61E2039EB82008B93AF /* InitiumFirstLoad.png in Resources */ = {isa = PBXBuildFile; fileRef = 79DDC61D2039EB82008B93AF /* InitiumFirstLoad.png */; };
+		79D230D9208DF90B00857268 /* InitiumFirstLoad.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D230D8208DF90B00857268 /* InitiumFirstLoad.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		7979C728203928CB0000BA16 /* InitiumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitiumUITests.swift; sourceTree = "<group>"; };
 		7979C72A203928CB0000BA16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7983D8D62039CCC100A3E5F9 /* InitiumBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = InitiumBanner.png; path = ../../../InitiumBanner.png; sourceTree = "<group>"; };
-		79DDC61D2039EB82008B93AF /* InitiumFirstLoad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = InitiumFirstLoad.png; path = ../../../InitiumFirstLoad.png; sourceTree = "<group>"; };
+		79D230D8208DF90B00857268 /* InitiumFirstLoad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InitiumFirstLoad.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +103,9 @@
 		7979C707203928CB0000BA16 /* Initium */ = {
 			isa = PBXGroup;
 			children = (
-				79DDC61D2039EB82008B93AF /* InitiumFirstLoad.png */,
 				7979C708203928CB0000BA16 /* AppDelegate.swift */,
 				7979C70A203928CB0000BA16 /* ViewController.swift */,
+				79D230D8208DF90B00857268 /* InitiumFirstLoad.png */,
 				7979C70C203928CB0000BA16 /* Main.storyboard */,
 				796CA64A204A04A300DE9333 /* View2Controller.swift */,
 				7979C70F203928CB0000BA16 /* Assets.xcassets */,
@@ -197,7 +197,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Cyph4r;
 				TargetAttributes = {
 					7979C704203928CB0000BA16 = {
@@ -250,7 +250,7 @@
 				7983D8D72039CCC100A3E5F9 /* InitiumBanner.png in Resources */,
 				7979C710203928CB0000BA16 /* Assets.xcassets in Resources */,
 				7979C70E203928CB0000BA16 /* Main.storyboard in Resources */,
-				79DDC61E2039EB82008B93AF /* InitiumFirstLoad.png in Resources */,
+				79D230D9208DF90B00857268 /* InitiumFirstLoad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +346,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -353,6 +354,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -403,6 +405,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -410,6 +413,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
