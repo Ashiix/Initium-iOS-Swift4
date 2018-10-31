@@ -2,7 +2,6 @@
 //  InitiumTests.swift
 //  InitiumTests
 //
-//  Created by Will Schmidt on 2/17/18.
 //  Copyright © 2018 Cyph4r. All rights reserved.
 //
 
