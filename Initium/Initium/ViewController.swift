@@ -2,7 +2,6 @@
 //  ViewController.swift
 //  Initium
 //
-//  Created by Evelyn Schmidt on 2/17/18.
 //  Copyright © 2018 Cyph4r. All rights reserved.
 //
 
