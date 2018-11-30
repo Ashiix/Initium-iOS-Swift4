@@ -11,10 +11,12 @@ import WebKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var Welcome: UIImageView!
-    @IBOutlet weak var HideWelcome: UIButton!
     @IBOutlet weak var LPMWarning: UIImageView!
     @IBOutlet weak var Webview1: WKWebView!
     @IBOutlet weak var Webview2: WKWebView!
+    @IBOutlet weak var SwitchAcc: UIButton!
+    @IBOutlet weak var HideWelcome: UIButton!
+    @IBOutlet weak var ConnectionWarning: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +26,7 @@ class ViewController: UIViewController {
         {
             // Unhide Initium intro
             Welcome.isHidden = false
-            HideWelcome.isEnabled = true
+            HideWelcome.isHidden = false
             
             // Save
             UserDefaults.standard.set (true, forKey: "onfirstlaunch")
@@ -32,7 +34,12 @@ class ViewController: UIViewController {
         }
         
         // Check the client for any issues
-        CheckClient()
+        
+        // Check if connected to the internet
+        if !Reachability.isConnectedToNetwork() { ConnectionWarning.isHidden = false }
+        
+        // Determine if LPM is enabled, if so, display warning
+        if ProcessInfo.processInfo.isLowPowerModeEnabled { LPMWarning.isHidden = false }
         
         // Load Initium Google login on Webview 1
         let InitiumGoogURL = URL(string: "https://www.playinitium.com/ServletUserControl?type=oauth&authType=google")
@@ -64,34 +71,10 @@ class ViewController: UIViewController {
         }
     }
     
-    // Hide introduction
-    @IBAction func buttontohide(_ sender: Any)
+    // Hide welcome
+    @IBAction func HideWelcome(_ sender: Any)
     {
         Welcome.isHidden = true
-        HideWelcome.isEnabled = false
+        HideWelcome.isHidden = true
     }
-    
-    // If recieved a memory warning, delete many items from view, and
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    func CheckClient()
-    {
-        // Check if connected to the internet
-        if !Reachability.isConnectedToNetwork()
-        {
-            // If not, disply a warning that forces the user to close the app
-            let alert = UIAlertController(title: "Unable to connect", message: "Please check your internet connection and restart the app.", preferredStyle: .alert)
-            
-            self.present(alert, animated: true)
-            
-            return
-        }
-        
-        // Determine if LPM is enabled, if so, display warning
-        if ProcessInfo.processInfo.isLowPowerModeEnabled { LPMWarning.isHidden = false }
-    }
-    
 }

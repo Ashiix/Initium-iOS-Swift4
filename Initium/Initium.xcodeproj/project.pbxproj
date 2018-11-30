@@ -15,10 +15,11 @@
 		7979C71E203928CB0000BA16 /* InitiumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7979C71D203928CB0000BA16 /* InitiumTests.swift */; };
 		7979C729203928CB0000BA16 /* InitiumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7979C728203928CB0000BA16 /* InitiumUITests.swift */; };
 		79D230D9208DF90B00857268 /* Welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D230D8208DF90B00857268 /* Welcome.png */; };
+		F239D75921B1D65B00C9B7EB /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F239D75821B1D65B00C9B7EB /* Reachability.swift */; };
+		F239D75B21B1E4FC00C9B7EB /* ConnectionWarning.png in Resources */ = {isa = PBXBuildFile; fileRef = F239D75A21B1E4FC00C9B7EB /* ConnectionWarning.png */; };
 		F29C33FB21AC76C100338B3B /* LPMWarning.png in Resources */ = {isa = PBXBuildFile; fileRef = F29C33FA21AC76C100338B3B /* LPMWarning.png */; };
 		F29C33FD21AC7C2500338B3B /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F29C33FC21AC7C2500338B3B /* Background.jpg */; };
 		F29C33FF21AC7C3400338B3B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F29C33FE21AC7C3400338B3B /* Icon.png */; };
-		F2F2543921B002AC00C71AF9 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F2543821B002AC00C71AF9 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,11 +54,12 @@
 		7979C728203928CB0000BA16 /* InitiumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitiumUITests.swift; sourceTree = "<group>"; };
 		7979C72A203928CB0000BA16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79D230D8208DF90B00857268 /* Welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Welcome.png; sourceTree = "<group>"; };
+		F239D75821B1D65B00C9B7EB /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		F239D75A21B1E4FC00C9B7EB /* ConnectionWarning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ConnectionWarning.png; sourceTree = "<group>"; };
 		F27B416221AEB0D4002DA445 /* Initium.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Initium.entitlements; sourceTree = "<group>"; };
 		F29C33FA21AC76C100338B3B /* LPMWarning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LPMWarning.png; sourceTree = "<group>"; };
 		F29C33FC21AC7C2500338B3B /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
 		F29C33FE21AC7C3400338B3B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		F2F2543821B002AC00C71AF9 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,8 @@
 		7979C707203928CB0000BA16 /* Initium */ = {
 			isa = PBXGroup;
 			children = (
+				F239D75A21B1E4FC00C9B7EB /* ConnectionWarning.png */,
+				F239D75821B1D65B00C9B7EB /* Reachability.swift */,
 				F27B416221AEB0D4002DA445 /* Initium.entitlements */,
 				F29C33FE21AC7C3400338B3B /* Icon.png */,
 				F29C33FC21AC7C2500338B3B /* Background.jpg */,
@@ -115,7 +119,6 @@
 				F29C33FA21AC76C100338B3B /* LPMWarning.png */,
 				7979C70C203928CB0000BA16 /* Main.storyboard */,
 				7979C70A203928CB0000BA16 /* ViewController.swift */,
-				F2F2543821B002AC00C71AF9 /* Reachability.swift */,
 				7979C711203928CB0000BA16 /* LaunchScreen.storyboard */,
 				7979C708203928CB0000BA16 /* AppDelegate.swift */,
 				7979C70F203928CB0000BA16 /* Assets.xcassets */,
@@ -206,7 +209,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = Cyph4r;
+				ORGANIZATIONNAME = NiteIsAFK;
 				TargetAttributes = {
 					7979C704203928CB0000BA16 = {
 						CreatedOnToolsVersion = 9.2;
@@ -214,7 +217,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.AccessWiFi = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -269,6 +272,7 @@
 				F29C33FB21AC76C100338B3B /* LPMWarning.png in Resources */,
 				7979C710203928CB0000BA16 /* Assets.xcassets in Resources */,
 				7979C70E203928CB0000BA16 /* Main.storyboard in Resources */,
+				F239D75B21B1E4FC00C9B7EB /* ConnectionWarning.png in Resources */,
 				79D230D9208DF90B00857268 /* Welcome.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,8 +299,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7979C70B203928CB0000BA16 /* ViewController.swift in Sources */,
-				F2F2543921B002AC00C71AF9 /* Reachability.swift in Sources */,
 				7979C709203928CB0000BA16 /* AppDelegate.swift in Sources */,
+				F239D75921B1D65B00C9B7EB /* Reachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,14 +476,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XYCYGJ7QC6;
 				INFOPLIST_FILE = Initium/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NiteIsAFK.Initium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -493,14 +497,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XYCYGJ7QC6;
 				INFOPLIST_FILE = Initium/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NiteIsAFK.Initium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
