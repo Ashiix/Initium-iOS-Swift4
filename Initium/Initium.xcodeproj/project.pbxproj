@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		796CA64B204A04A300DE9333 /* View2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796CA64A204A04A300DE9333 /* View2Controller.swift */; };
 		7979C709203928CB0000BA16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7979C708203928CB0000BA16 /* AppDelegate.swift */; };
 		7979C70B203928CB0000BA16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7979C70A203928CB0000BA16 /* ViewController.swift */; };
 		7979C70E203928CB0000BA16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7979C70C203928CB0000BA16 /* Main.storyboard */; };
@@ -15,8 +14,11 @@
 		7979C713203928CB0000BA16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7979C711203928CB0000BA16 /* LaunchScreen.storyboard */; };
 		7979C71E203928CB0000BA16 /* InitiumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7979C71D203928CB0000BA16 /* InitiumTests.swift */; };
 		7979C729203928CB0000BA16 /* InitiumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7979C728203928CB0000BA16 /* InitiumUITests.swift */; };
-		7983D8D72039CCC100A3E5F9 /* InitiumBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 7983D8D62039CCC100A3E5F9 /* InitiumBanner.png */; };
-		79D230D9208DF90B00857268 /* InitiumFirstLoad.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D230D8208DF90B00857268 /* InitiumFirstLoad.png */; };
+		79D230D9208DF90B00857268 /* Welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D230D8208DF90B00857268 /* Welcome.png */; };
+		F29C33FB21AC76C100338B3B /* LPMWarning.png in Resources */ = {isa = PBXBuildFile; fileRef = F29C33FA21AC76C100338B3B /* LPMWarning.png */; };
+		F29C33FD21AC7C2500338B3B /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F29C33FC21AC7C2500338B3B /* Background.jpg */; };
+		F29C33FF21AC7C3400338B3B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F29C33FE21AC7C3400338B3B /* Icon.png */; };
+		F2F2543921B002AC00C71AF9 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F2543821B002AC00C71AF9 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		796CA64A204A04A300DE9333 /* View2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2Controller.swift; sourceTree = "<group>"; };
 		7979C705203928CB0000BA16 /* Initium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Initium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7979C708203928CB0000BA16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7979C70A203928CB0000BA16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,8 +52,12 @@
 		7979C724203928CB0000BA16 /* InitiumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InitiumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7979C728203928CB0000BA16 /* InitiumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitiumUITests.swift; sourceTree = "<group>"; };
 		7979C72A203928CB0000BA16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7983D8D62039CCC100A3E5F9 /* InitiumBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = InitiumBanner.png; path = ../../../InitiumBanner.png; sourceTree = "<group>"; };
-		79D230D8208DF90B00857268 /* InitiumFirstLoad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InitiumFirstLoad.png; sourceTree = "<group>"; };
+		79D230D8208DF90B00857268 /* Welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Welcome.png; sourceTree = "<group>"; };
+		F27B416221AEB0D4002DA445 /* Initium.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Initium.entitlements; sourceTree = "<group>"; };
+		F29C33FA21AC76C100338B3B /* LPMWarning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LPMWarning.png; sourceTree = "<group>"; };
+		F29C33FC21AC7C2500338B3B /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
+		F29C33FE21AC7C3400338B3B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		F2F2543821B002AC00C71AF9 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,14 +108,17 @@
 		7979C707203928CB0000BA16 /* Initium */ = {
 			isa = PBXGroup;
 			children = (
-				7979C708203928CB0000BA16 /* AppDelegate.swift */,
-				7979C70A203928CB0000BA16 /* ViewController.swift */,
-				79D230D8208DF90B00857268 /* InitiumFirstLoad.png */,
+				F27B416221AEB0D4002DA445 /* Initium.entitlements */,
+				F29C33FE21AC7C3400338B3B /* Icon.png */,
+				F29C33FC21AC7C2500338B3B /* Background.jpg */,
+				79D230D8208DF90B00857268 /* Welcome.png */,
+				F29C33FA21AC76C100338B3B /* LPMWarning.png */,
 				7979C70C203928CB0000BA16 /* Main.storyboard */,
-				796CA64A204A04A300DE9333 /* View2Controller.swift */,
-				7979C70F203928CB0000BA16 /* Assets.xcassets */,
+				7979C70A203928CB0000BA16 /* ViewController.swift */,
+				F2F2543821B002AC00C71AF9 /* Reachability.swift */,
 				7979C711203928CB0000BA16 /* LaunchScreen.storyboard */,
-				7983D8D62039CCC100A3E5F9 /* InitiumBanner.png */,
+				7979C708203928CB0000BA16 /* AppDelegate.swift */,
+				7979C70F203928CB0000BA16 /* Assets.xcassets */,
 				7979C714203928CB0000BA16 /* Info.plist */,
 			);
 			path = Initium;
@@ -202,20 +210,29 @@
 				TargetAttributes = {
 					7979C704203928CB0000BA16 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 1;
+							};
 							com.apple.BackgroundModes = {
 								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
 							};
 						};
 					};
 					7979C718203928CB0000BA16 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 7979C704203928CB0000BA16;
 					};
 					7979C723203928CB0000BA16 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 7979C704203928CB0000BA16;
 					};
@@ -246,11 +263,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29C33FF21AC7C3400338B3B /* Icon.png in Resources */,
 				7979C713203928CB0000BA16 /* LaunchScreen.storyboard in Resources */,
-				7983D8D72039CCC100A3E5F9 /* InitiumBanner.png in Resources */,
+				F29C33FD21AC7C2500338B3B /* Background.jpg in Resources */,
+				F29C33FB21AC76C100338B3B /* LPMWarning.png in Resources */,
 				7979C710203928CB0000BA16 /* Assets.xcassets in Resources */,
 				7979C70E203928CB0000BA16 /* Main.storyboard in Resources */,
-				79D230D9208DF90B00857268 /* InitiumFirstLoad.png in Resources */,
+				79D230D9208DF90B00857268 /* Welcome.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7979C70B203928CB0000BA16 /* ViewController.swift in Sources */,
-				796CA64B204A04A300DE9333 /* View2Controller.swift in Sources */,
+				F2F2543921B002AC00C71AF9 /* Reachability.swift in Sources */,
 				7979C709203928CB0000BA16 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Initium/Initium.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -458,7 +478,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -467,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Initium/Initium.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -478,7 +499,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -494,7 +515,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyph4r.InitiumTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Initium.app/Initium";
 			};
@@ -511,7 +532,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyph4r.InitiumTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Initium.app/Initium";
 			};
@@ -527,7 +548,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyph4r.InitiumUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Initium;
 			};
@@ -543,7 +564,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyph4r.InitiumUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Initium;
 			};

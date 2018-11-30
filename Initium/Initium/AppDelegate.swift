@@ -2,8 +2,7 @@
 //  AppDelegate.swift
 //  Initium
 //
-//  Created by Evelyn Schmidt on 2/17/18.
-//  Copyright © 2018 Cyph4r. All rights reserved.
+//  Copyright © 2018 NiteIsAFK. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
